@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+div.background {
+  margin-top:30px;
+  background: url(main.jpg) repeat;
+  width:auto;
+  height:100;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+}
+
+div.transbox p.title {
+  margin: 5%;
+  font-weight: bold;
+  color: #ffffff;
+  float:center;
+}
+
+p.title
+{
+  border-style:solid;
+  color:#ffffff;
+  font-family:Courier New;
+  font-size:80px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid #ccc;  
+}
+
+input[type=text], input[type=password] {
+    width:50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: 40%;
+    padding: 14px 20px;
+    background-color: #f44336;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 10%;
+    height:10%
+    border-radius: 50%;
+}
+
+.container 
+{
+    padding: 16px;
+    border:1px solid #ccc;
+    width:50%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 50%;
+    }
+}
+</style>
+<body>
+<ul>
+  <li><a class="active" href="main.html">Home</a></li>
+  <li><a href="oneform.php">Signup</a></li>
+  <li><a href="aboutuspage.html">About</a></li>
+  <li><a href="restaurantlist.php">Restaurants</a></li>
+  <li><a href="adminlogin.html">Admin Login</a></li>
+</ul>
+
+<div class="background">
+  <div class="transbox">
+    <center><p class="title">PUNE FOOD CRAVINGS</p></center>
+  </div>
+</div>
+<center>
+ <div class="container">
+	<form action="adminlogin.php" method="post">
+  		<div class="imgcontainer">
+    		<img src="admin.png" alt="Avatar" class="avatar">
+ 		 </div>
+   		 <label><b>Username</b></label>
+    		 <input type="text" placeholder="Enter Username" name="uname" required>
+    		<br/>
+    		<label><b>Password</b></label>
+    		<input type="password" placeholder="Enter Password" name="psw" required>
+   		 <br/>
+    		<button type="submit">Login</button>
+    		<button type="button" class="cancelbtn">Cancel</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+      <input type="checkbox" checked="checked"> Remember me
+    <span class="psw"><a href="#">Forgot Password?</a></span>
+  </div>
+</form>
+</dev>
+</body>
+</html>
+

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+    background-color: #cc0066;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	 
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #ff99c2;
+}
+
+li.dropdown {
+	background-color: 	#cc0066;
+    display: inline-block;
+}
+
+.dropdown-content {
+	
+    display: none;
+    position: absolute;
+    background-color: #cc0066;
+    min-width: 160px;
+   
+}
+
+.dropdown-content a {
+background-color: #cc0066;
+    color:  white;
+    padding: 12px 16px;
+    text-decoration: none;z
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: gray}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+}
+
+div.background {
+  background: url(myrestt1.jpg) repeat;
+  border: 2px solid black;
+  	height:800px;
+    width:1280px;
+}
+
+div.transbox {
+ 
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.9;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  height:900px;
+    width:1200px;
+}
+
+div.transbox  {
+ 
+  font-weight: bold;
+  color: #000000;
+	opacity:
+}
+
+body {
+  
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1.2;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+	
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+	
+}
+
+
+.modalBackground {
+  background-color: rgba(222, 222, 222, 0.7);
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+</style>
+</head>
+<body background="restaurant3.jpg">
+
+<div class="background">
+  <div class="transbox">
+<h1><marquee behavior="slide"><font size="5" color="#cc0066"><font size="6">T</font>VUM, <font size="6">K</font>ALYANI <font size="6">N</font>AGAR </marquee></font></h1>
+<font color="#cc0066"><h3> 020 30189379</h3></font>
+
+<ul>
+	 <li><a href="main.html">HOME</a></li>
+  <li><a href="tmap.html">MAP</a></li>
+ <li><a href="restaurant3menu1.php">MENU</a></li>
+	 <li><a href="logout.php">LOGOUT</a></li>
+</ul>
+
+<br>
+<br>
+
+
+<h3><font color="#330033"><b>Opening hours:</b>7 am to 11pm.</font></h3><br>
+<h3><font color="#330033"><b>Address:</b>46/2, Near Mhatre Bridge, Opposite Siddhi Gardens, Kalyani Nagar, Pune.</font></h3><br>
+<h3><font color="#330033"><b>Cuisines:</b>North Indian, Chinese, Continental, Mexican, South Indian.</font></h3><br>
+<h3><font color="#330033"><b>Average cost:</b>Rs 700/- for two people.</font></h3><br>
+<h3><font color="#330033"><b>What do people love here?:</b>Sweet Corn Soup, Brownie Chocolate, Coffee, Manchow Soup.</font></h3><br>
+
+<div class="row">
+  <div class="column">
+    <img src="hot11.jpg"  style="width:200px; height:200px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="hot12.jpg" style="width:200px; height:200px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="hot13.jpg" style="width:200px; height:200px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="hot14.jpg" style="width:200px; height:200px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal" class="modalBackground">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="hot11.jpg" style="width:1170px; height:400px;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="hot12.jpg" style="width:1170px; height:400px;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="hot13.jpg" style="width:1170px; height:400px;">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="hot14.jpg" style="width:1170px; height:400px;">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+	<div align="center">
+    <div class="column">
+      <img class="demo cursor" src="hot11.jpg" style="width:200px; height:200px;" onclick="currentSlide(1)" alt="Our special choclate brownie">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="hot12.jpg" style="width:200px; height:200px;" onclick="currentSlide(2)" alt="Mexican tacos">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="hot13.jpg" style="width:200px; height:200px;" onclick="currentSlide(3)" alt="Classy ambience">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="hot14.jpg" style="width:200px; height:200px;" onclick="currentSlide(4)" alt="Your Hygiene - Our Priority">
+    </div>
+</div>
+  </div>
+</div>
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+</html>
+
+  </div>
+</div>
+
+</body>
+</html>

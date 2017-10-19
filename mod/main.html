@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>
+<style>
+div.background {
+  margin-top:30px;
+  background: url(main.jpg) repeat;
+  width:auto;
+  height:100;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+}
+
+div.transbox p.title {
+  margin: 5%;
+  font-weight: bold;
+  color: #ffffff;
+  float:center;
+}
+
+p.title
+{
+  border-style:solid;
+  color:#ffffff;
+  font-family:Courier New;
+  font-size:80px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: green;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    border: 3px solid #ccc;  
+	background-color:#d9d9d9;
+}
+
+.floating-boxx {
+    display: inline-block;
+    width: 420px;
+    height: 390px;
+    margin-right: 30px;
+    border: 3px solid #ccc;  
+    float:right;
+}
+
+input.search[type=text] {
+    width: 770px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.footer 
+{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:100px;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
+
+input[type=email], input[type=password] {
+    width: 420px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:  #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+button.srch {
+    background-color:#ff3333;
+    color: white;
+    padding: 12px 20px 12px 40px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+	
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: 40%;
+    padding: 10px 15px;
+    background-color: #f44336;
+}
+
+.caption {
+    display: block;
+}
+
+
+</style>
+
+</head>
+<body>
+<ul>
+  <li><a class="active" href="main.html">Home</a></li>
+  <li><a href="oneform.php">Signup</a></li>
+  <li><a href="aboutuspage.html">About</a></li>
+  <li><a href="restaurantlist.php">Restaurants</a></li>
+<li><a href="rateus.html">Rating</a></li>
+  <li><a href="adminlogin.html">Admin Login</a></li>
+</ul>
+
+<div class="background">
+  <div class="transbox">
+    <center><p class="title">PUNE FOOD CRAVINGS</p></center>
+  </div>
+</div>
+<br/><br/>
+
+<form class="search1" action="search.php" method="post">
+  <input class="search" type="text" name="search" placeholder="Search..">
+  <button class="srch" type="submit">Search</button> 
+</form>
+<br>
+
+<div class="floating-box">
+   <img src="fb2.jpg" style="height:200px; width:350px"><span class="caption" ><br><b><font color="green">Categories</font><b></span>
+</div>
+<div class="floating-box">
+   <img src="fb3.jpg" style="height:200px; width:350px"><span class="caption" ><br><b><font color="green">Offers</font><b></span>
+</div>
+
+<div class="floating-boxx">
+<br/>
+<form method="post" action="login1.php">
+<center>
+  <div class="container">
+    <center><label><b><font size="4" style="font:ARIAL;color:gray">E</font><font size="3"style="font:ARIAL;color:gray">MAIL:</font></b></label></center>
+    <br/>
+    <input type="email" placeholder="Enter Username" name="nm" required>
+    <br/><br/>
+    <center><label><b><font size="4" style="font:ARIAL;color:gray">P</font><font size="3"style="font:ARIAL;color:gray">ASSWORD:</font></b></label></center>
+    <br/>
+    <input type="password" placeholder="Enter Password" name="pswd" required>
+    <button type="button" class="cancelbtn">Cancel</button>  
+    <button type="submit">Login</button>  
+  </div>
+  <br/>
+  <div class="container" style="background-color:#f1f1f1">
+   <div align="left"> <input type="checkbox" checked="checked">Remember me</div>
+    <div align="right"><a href="mail.html">Forgot password?</a></div>
+  </div>
+</center>
+</form>
+</div>
+
+<br/><br/>
+
+<div class="floating-box">
+   <img src="fb4.jpg" style="height:200px; width:350px"><span class="caption" ><br><b><font color="green">Trending this week</font><b></span>
+</div>
+<div class="floating-box">
+   <img src="fb5.jpg" style="height:200px; width:350px"><span class="caption" ><br><b><font color="green">Feedback</font><b></span>
+</div>
+<br/><br/><br/>
+<div class="footer">
+<br/>
+  <center>
+   <a href="instagram.com" alt="instagram"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></a>
+   <a href="facebook" alt="facebook"><i class="fa fa-facebook" style="font-size:48px;color:white"></i></a>
+   <a href="twitter" alt="twitter"><i class="fa fa-twitter" style="font-size:48px;color:white"></i></a>
+  </center>
+</div>
+</body>
+</html>

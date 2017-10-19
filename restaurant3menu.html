@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+    background-color:  #cc0066;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	  
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:   #cc0066;
+}
+
+li.dropdown {
+	background-color: 	#000080 ;
+    display: inline-block;
+}
+
+.dropdown-content {
+	
+    display: none;
+    position: absolute;
+    background-color: #000080;
+    min-width: 160px;
+   
+}
+
+.dropdown-content a {
+background-color:#000080;
+    color:  white;
+    padding: 12px 16px;
+    text-decoration: none;z
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: gray}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+}
+
+div.background {
+  background: url(myrestt1.jpg) repeat;
+  border: 2px solid black;
+  	height:800px;
+    width:1280px;
+}
+
+div.transbox {
+ 
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  height:800px;
+    width:1280px;
+}
+
+div.transbox  {
+ 
+  font-weight: bold;
+  color: #000000;
+}
+table {
+    width:100%;
+	height:400px;
+	
+}
+table, th, td {
+    border: 1px white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+	
+}
+table#t01 tr:nth-child(odd) {
+   
+}
+table#t01 th {
+    background-color: #cc0066;
+    color: white;
+}
+</style>
+</head>
+<body background="restaurant3.jpg">
+<div class="background">
+ <h1><marquee behavior="slide">
+		<font size="6" color="white">T</font><font size="5" color="white">VUM,</font>
+		<font size="6" color="white">K</font><font size="5" color="white">ALYANINAGAR</font>		
+</marquee></h1>
+<br>
+<img src="r.png" alt="The Pulpit Rock" width="60" height="60" margin="1px;"align="right" >
+<ul>
+  <li><a href="">MAP</a></li>
+ <li><a href="restaurant2menu.html">MENU</a></li>
+</ul>
+  <div class="transbox">
+
+<br/><br/>
+	<form method="post" action="place_order3.php">
+<br/><br/>
+<table id="t01" background="menu1chef.jpg height:800px,width:1000px">
+  <tr>
+  	 <th>ADD</th>
+	<th>VEG/<br>NON-VEG</th>
+     <th>ITEM</th>
+    <th>ITEM NAME</th> 
+    <th>PRICE</th>
+    	<th>QUANTITY</th>
+  </tr>
+  <tr>
+  	 <td><input type="checkbox" name="check_list[]" value="31" style="width: 30px; height: 30px; background-color: #d9d9d9;"></td>
+	<td><img src="veg.png" alt="The Pulpit Rock" width="40" height="40" margin="1px;"align="center" ></td>
+	<td><img src="31.jpg" alt="The Pulpit Rock"  width="200" height"150" align="left" margin="1px;"align="center" ></td>
+    <td><font size="5">PAPAD PLATTER</font><br> <br><font size="3" > A variety of papads served with different chatnis and spices</font></td>
+    <td>180</td>
+    	<td><input type="number" name="r" value="i2"></td>
+  </tr>
+  <tr>
+   <td><input type="checkbox" name="check_list[]" value="32" id="a"></td>
+    <td><img src="veg.png" alt="The Pulpit Rock" width="40" height="40" margin="1px;"align="center" ></td>
+	<td><img src="32.jpg" alt="The Pulpit Rock"  width="200" height="150" align="left" margin="1px;"align="center" ></td>
+    <td><font size="5">PANEER BUTTER MASALA</font><br><br><font size="3">Soft cottage cheese cubes in sweetish red gravy</font></td>
+    <td>240</td>
+    	<td><input type="number" name="s" value="i3" id="a1"></td>
+  </tr>
+  <tr>
+   <td><input type="checkbox" name="check_list[]" value="33"></td>
+    
+    <td><img src="veg.png" alt="The Pulpit Rock" width="40" height="40" margin="1px;"align="center" ></td>
+	<td><img src="33.jpeg" alt="The Pulpit Rock"  width="200" height="150" align="left" margin="1px;"align="center" ></td>
+    <td><font size="5">PAV BHAJI</font><br><br><font size="3">An exotic blend of vegetables cooked in Indian spices,<br>served with hot bread</font></td>
+    <td>230</td>
+    	<td><input type="number" name="t" value="i4"></td>
+  </tr>
+</table><br/>
+<div align="center">
+<input type="submit" style="width: 135px; height: 60px;  padding: 0.2px; background-color: #cc0066;color:white" value="PLACE ORDER" name="submit">
+
+</div>
+</form>
+</body>
+</html>
+
